@@ -9,17 +9,17 @@ namespace lab2
         {
             Task t1 = Task.Run(() =>
             {
-                Console.WriteLine("Привет из задачи 1");
+                Console.WriteLine("Привет (Задача 1)");
             });
 
             Task t2 = Task.Run(() =>
             {
-                Console.WriteLine("Привет из задачи 2");
+                Console.WriteLine("Привет (Задача 2)");
             });
 
             Task t3 = Task.Run(() =>
             {
-                Console.WriteLine("Привет из задачи 3");
+                Console.WriteLine("Привет (Задача 3)");
             });
 
             await Task.WhenAll(t1, t2, t3);
